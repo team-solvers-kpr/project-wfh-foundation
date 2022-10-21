@@ -1,0 +1,30 @@
+[      
+    { "serial":1,
+        "title":"Who We Are",
+        "img":"https://wfhbd.org/wp-content/uploads/2022/03/Joy-Bangla-Youth-Award-2017-WFH-Foundation.jpg",
+        "color":"#369ff4",
+        "desc":"WFH Foundation, a non-profit organization in Bangladesh which is working to make Bangladesh better.",
+        "btnText":"Read More"
+    },
+    { "serial":2,
+        "title":"What We Do",
+        "img":"https://wfhbd.org/wp-content/uploads/2021/12/fANDAMENTALdEVELOPMENT.jpg",
+        "color":"#9064bf",
+        "desc":"We work for the backward sections of the society in Bangladesh through fundamental development",
+        "btnText":"Our Works"
+    },
+    { "serial":3,
+        "title":"Make A Donation",
+        "img":"https://wfhbd.org/wp-content/uploads/2022/03/Make-A-Donation-1-min.png",
+        "color":"#fa575d",
+        "desc":"Break the cycle of poverty by donating to education, health, awareness, empowerment and community building.",
+        "btnText":"Donate Now"
+    },
+    { "serial":4,
+        "title":"Be A Volunteer",
+        "img":"https://wfhbd.org/wp-content/uploads/2021/12/Be-a-volunteer-banglaadesh.jpg",
+        "color":"#5586e8",
+        "desc":"Volunteering can be personally rewarding and helps you ‘give something back’ to your community.",
+        "btnText":"Be a Volunteer"
+    }
+]

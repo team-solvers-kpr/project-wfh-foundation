@@ -1,0 +1,91 @@
+.headingSubtitle {
+    font-size: 18px;
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #0097FA;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: capitalize;
+    padding-left: 20px;
+}
+
+.heading {
+    font-size: 30px;
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.headingContainer {
+    border-left: 2px solid #0097FA;
+
+}
+
+.desc {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 1.8;
+    color: #8c8c8c;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.heading2 {
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #404040;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.headingRight {
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #404040;
+    font-size: 20px;
+    border-bottom: 2px solid #0097FA;
+    padding-bottom: 15px;
+    width: 10%;
+}
+
+.announcementDate {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.announcementTitle {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #404040;
+    word-wrap: break-word;
+    text-transform: capitalize;
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.announcementDesc {
+    font-family: Open Sans, sans-serif;
+    color: #404040;
+    text-align: justify;
+}
+
+.announcementImg {
+    transform-origin: 65% 75%;
+    transition: transform 1.5s, filter .5s ease-out;
+    margin-bottom: 20px;
+}
+
+/* The Transformation */
+.announcementImg:hover {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}

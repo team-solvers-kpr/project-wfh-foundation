@@ -1,9 +1,10 @@
 import "./App.css";
+import Home from "./Components/Pages/Home/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome WFH Foundation</h1>
+    <div >
+      <Home />
     </div>
   );
 }
