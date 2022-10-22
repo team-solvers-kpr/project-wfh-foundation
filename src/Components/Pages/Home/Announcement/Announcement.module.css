@@ -5,7 +5,7 @@
     font-weight: 400;
     line-height: 1.4;
     text-transform: capitalize;
-    padding-left: 20px;
+
 }
 
 .heading {
@@ -16,12 +16,11 @@
     font-weight: 600;
     line-height: 40px;
     margin-top: 10px;
-    padding-left: 20px;
 }
 
 .headingContainer {
     border-left: 2px solid #0097FA;
-
+    padding-left: 20px;
 }
 
 .desc {
@@ -39,7 +38,22 @@
     line-height: 1.2;
     color: #404040;
     font-size: 18px;
-    margin-top: 40px;
+}
+
+.headingContainer2 {
+    border-left: 2px solid #0097FA;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.desc2 {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 1.8;
+    color: #8c8c8c;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 20px;
 }
 
 .headingRight {
@@ -76,16 +90,81 @@
     font-family: Open Sans, sans-serif;
     color: #404040;
     text-align: justify;
+    margin-top: 30px;
 }
 
 .announcementImg {
     transform-origin: 65% 75%;
     transition: transform 1.5s, filter .5s ease-out;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* The Transformation */
 .announcementImg:hover {
     transform: scale(1.1);
     filter: brightness(50%);
+}
+
+
+
+.iconsContainer {
+    margin-top: 50px;
+}
+
+.iconWithNumber {
+    display: flex;
+    align-items: center;
+    font-family: Open Sans, sans-serif;
+    margin-bottom: 20px;
+}
+
+.numbers {
+    border-left: 1px solid #e5e5e5;
+    padding-left: 20px;
+}
+
+.number {
+    font-family: Open Sans, sans-serif;
+    font-size: 24px;
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.number2 {
+    font-family: Open Sans, sans-serif;
+    font-size: 24px;
+    color: #8bca4e;
+    font-weight: bold;
+}
+
+.number3 {
+    font-family: Open Sans, sans-serif;
+    font-size: 24px;
+    color: #fec501;
+    font-weight: bold;
+}
+
+.number4 {
+    font-family: Open Sans, sans-serif;
+    font-size: 24px;
+    color: #5586e8;
+    font-weight: bold;
+}
+
+.milestone {
+    font-weight: 600;
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+
+@media screen and (max-width: 1080px) {
+    .headingContainer2 {
+        border-left: 2px solid #0097FA;
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+
+    .iconsContainer {
+        margin-top: 50px;
+    }
 }

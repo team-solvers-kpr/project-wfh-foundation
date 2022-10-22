@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Announcement.module.css';
+import users from '../../../../Assets/Icons/1.png'
+import beneficiary from '../../../../Assets/Icons/2.png'
+import projects from '../../../../Assets/Icons/3.png'
+import districts from '../../../../Assets/Icons/4.png'
+import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
 
 const Announcement = () => {
     const [announcements, setAnnouncement] = useState([]);
@@ -12,7 +18,7 @@ const Announcement = () => {
     return (
         <div className='container'>
             <div className="row g-5">
-                <div className="col-md-6">
+                <div className="col-md-12 col-lg-6">
                     <div className={styles.headingContainer} >
                         <span className={styles.headingSubtitle}>Non-profit Organization In Bangladesh</span>
                         <h2 className={styles.heading}>WORKS FOR HUMANITY FOUNDATION</h2>
@@ -36,14 +42,21 @@ const Announcement = () => {
                         <p className={styles.desc}>
                             Can a human being imagine his body without blood? Or is it possible to make it by machine? Ans. Is NO, But blood can be needed for anyone, anytime. Basically, Dept. of Health & Blood is working for managing blood donors for needy patients
                         </p>
+                        <div className={styles.headingContainer2} >
+                            <span className={styles.headingSubtitle}>Lorem Ipsum is simply dummy text</span>
+                            <h2 className={styles.heading}>Reach And Presence</h2>
+                        </div>
+                        <p className={styles.desc2}>
+                            <span style={{ fontWeight: "bold" }}>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        </p>
                     </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-12 col-lg-6">
                     <h3 className={styles.headingRight}>Announcement</h3>
                     {
                         announcements.map(announcement => (
                             <div key={announcement.serial} >
-                                <div className="card" style={{ borderRadius: "0px", textAlign: "center", height: "736px", marginTop: "40px", overflow: "hidden" }} >
+                                <div className="card" style={{ borderRadius: "0px", textAlign: "center", marginTop: "15px", overflow: "hidden" }} >
 
                                     <img className={styles.announcementImg} src={announcement.img} style={{ borderRadius: "0px" }} alt="" />
                                     <div className="card-body">
@@ -53,12 +66,79 @@ const Announcement = () => {
                                             {announcement.desc.slice(0, 405)}
                                             <span style={{ paddingLeft: "5px" }}>.....</span>
                                         </p>
-
                                     </div>
                                 </div>
                             </div>
                         ))
                     }
+                    <div className={styles.iconsContainer}>
+                        <div className='row'>
+                            <div className='col-6'>
+                                <div className={styles.iconWithNumber}>
+                                    <div>
+                                        <img src={users} alt="" /></div>
+                                    <div className={styles.numbers}>
+                                        <CountUp end={228} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span className={styles.number} ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
+                                        <div className={styles.milestone}>Volunteer</div>
+                                    </div>
+                                </div>
+
+                                <div className={styles.iconWithNumber}>
+                                    <div>
+                                        <img src={beneficiary} alt="" /></div>
+                                    <div className={styles.numbers}>
+                                        <CountUp end={120000} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span className={styles.number3} ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
+                                        <div className={styles.milestone}>Beneficiary</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div className='col-6'>
+                                <div className={styles.iconWithNumber}>
+                                    <div>
+                                        <img src={projects} alt="" /></div>
+                                    <div className={styles.numbers}>
+                                        <CountUp end={120} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span className={styles.number2} ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
+                                        <div className={styles.milestone}>Projects</div>
+                                    </div>
+                                </div>
+                                <div className={styles.iconWithNumber}>
+                                    <div>
+                                        <img src={districts} alt="" /></div>
+                                    <div className={styles.numbers}>
+                                        <CountUp end={13} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span className={styles.number4} ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
+                                        <div className={styles.milestone}>District</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

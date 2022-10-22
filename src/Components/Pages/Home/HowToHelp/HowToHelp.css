@@ -1,0 +1,7 @@
+.howToHelp {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), black url('../../../../Assets/HowToHelp/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 300px 00px 200px;
+    margin: 80px 0;
+}
