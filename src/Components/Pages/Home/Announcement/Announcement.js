@@ -17,7 +17,7 @@ const Announcement = () => {
     }, [])
     return (
         <div className='container'>
-            <div className="row g-5">
+            <div className="row">
                 <div className="col-md-12 col-lg-6">
                     <div className={styles.headingContainer} >
                         <span className={styles.headingSubtitle}>Non-profit Organization In Bangladesh</span>
