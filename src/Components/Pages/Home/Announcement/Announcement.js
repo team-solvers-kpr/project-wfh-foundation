@@ -6,6 +6,7 @@ import projects from '../../../../Assets/Icons/3.png'
 import districts from '../../../../Assets/Icons/4.png'
 import CountUp from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
+import Heading from '../../../Shared/Heading/Heading';
 
 const Announcement = () => {
     const [announcements, setAnnouncement] = useState([]);
@@ -19,10 +20,7 @@ const Announcement = () => {
         <div className='container'>
             <div className="row">
                 <div className="col-md-12 col-lg-6">
-                    <div className={styles.headingContainer} >
-                        <span className={styles.headingSubtitle}>Non-profit Organization In Bangladesh</span>
-                        <h2 className={styles.heading}>WORKS FOR HUMANITY FOUNDATION</h2>
-                    </div>
+                    <Heading subtitle="Non-profit Organization In Bangladesh" heading="WORKS FOR HUMANITY FOUNDATION" />
                     <div>
                         <p className={styles.desc}>
                             WFH FOUNDATION is a Non-profit Social Organization in Bangladesh that is working to remove illiteracy, make every people aware of their rights, and increase awareness about child marriage with different charitable activities in Bangladesh. It also aims to ensure every human being’s participation in blood donation and make people aware of the disease.
@@ -78,7 +76,7 @@ const Announcement = () => {
                                     <div>
                                         <img src={users} alt="" /></div>
                                     <div className={styles.numbers}>
-                                        <CountUp end={228} redraw={true}>
+                                        <CountUp end={228} redraw={true} duration={4.75}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span className={styles.number} ref={countUpRef} />
@@ -93,7 +91,7 @@ const Announcement = () => {
                                     <div>
                                         <img src={beneficiary} alt="" /></div>
                                     <div className={styles.numbers}>
-                                        <CountUp end={120000} redraw={true}>
+                                        <CountUp end={120000} redraw={true} duration={4.75}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span className={styles.number3} ref={countUpRef} />
@@ -111,7 +109,7 @@ const Announcement = () => {
                                     <div>
                                         <img src={projects} alt="" /></div>
                                     <div className={styles.numbers}>
-                                        <CountUp end={120} redraw={true}>
+                                        <CountUp end={120} redraw={true} duration={4.75}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span className={styles.number2} ref={countUpRef} />
@@ -125,7 +123,7 @@ const Announcement = () => {
                                     <div>
                                         <img src={districts} alt="" /></div>
                                     <div className={styles.numbers}>
-                                        <CountUp end={13} redraw={true}>
+                                        <CountUp end={13} redraw={true} duration={4.75} >
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span className={styles.number4} ref={countUpRef} />
