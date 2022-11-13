@@ -1,0 +1,16 @@
+.activityHeading {
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.activityText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+
