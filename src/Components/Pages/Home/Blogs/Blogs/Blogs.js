@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Carousel from 'react-multi-carousel';
+import CustomButton from '../../../../Shared/CustomButton/CustomButton';
 import Heading from '../../../../Shared/Heading/Heading';
 import Blog from '../Blog/Blog';
 
@@ -56,7 +57,11 @@ From Our Blog
                     blogs.map(blog => <Blog key={blog.serial} blog={blog} />)
                 }
             </Carousel>
+            <h5 className='text-center'>Please find below our blog posts.</h5>
+            <center className="mt-4 mb-4">
 
+                <CustomButton title="View All" backgroundColor="#0097fa" height="49px" width="140px" />
+            </center>
         </div>
 
     );
