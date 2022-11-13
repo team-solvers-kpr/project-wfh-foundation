@@ -1,0 +1,32 @@
+.activitiesHeadingContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.activitiesHeadingText {
+    font-family: Open Sans;
+    text-align: right;
+    font-size: 15px;
+    color: "#8c8c8c";
+}
+
+.image-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .activitiesHeadingContainer {
+        flex-direction: column;
+    }
+
+    .activitiesHeadingText {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
