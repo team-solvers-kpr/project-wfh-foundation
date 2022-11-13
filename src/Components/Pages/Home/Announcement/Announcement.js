@@ -52,16 +52,16 @@ const Announcement = () => {
                 <div className="col-md-12 col-lg-6">
                     <h3 className={styles.headingRight}>Announcement</h3>
                     {
-                        announcements.map(announcement => (
+                        announcements.slice(0, 1).map(announcement => (
                             <div key={announcement.serial} >
                                 <div className="card" style={{ borderRadius: "0px", textAlign: "center", marginTop: "15px", overflow: "hidden" }} >
 
-                                    <img className={styles.announcementImg} src={announcement.img} style={{ borderRadius: "0px" }} alt="" />
+                                    <img className={styles.announcementImg} src={announcement.img1} style={{ borderRadius: "0px" }} alt="" />
                                     <div className="card-body">
                                         <span className={styles.announcementDate}>{announcement.date}</span>
                                         <h5 className={styles.announcementTitle}>{announcement.title}</h5>
                                         <p className={styles.announcementDesc}>
-                                            {announcement.desc.slice(0, 405)}
+                                            {announcement.desc1.slice(0, 405)}
                                             <span style={{ paddingLeft: "5px" }}>.....</span>
                                         </p>
                                     </div>
